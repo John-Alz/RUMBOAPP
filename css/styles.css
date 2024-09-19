@@ -8,6 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     height: 100%;
     height: 100vh;
@@ -169,15 +174,64 @@ header ul a:hover {
 
 #contact {
     background: yellow;
-    height: 100vh;
     text-align: center;
+    padding: 100px;
 }
 
 #contact h2 {
     font-size: 50px;
     font-family: var(--primary-font);
+    padding-bottom: 20px;
 }
 
 #contact p {
+    font-size: 18px;
+    font-family: var(--primary-font);
+    padding-bottom: 40px;
+}
+
+.inputs_form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.inputs_form input, 
+.inputs_form select {
+    width: 300px;
+    padding: 10px;
+}
+
+.inputs_form input::placeholder {
+    font-family: var(--primary-font);
+}
+
+.inputs_form:nth-child(2) {
+    padding-bottom: 40px;
+}
+
+form button {
+    padding: 5px 30px;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    background: #b9b861;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer {
+    background: #000000;
+    padding: 50px;
+    text-align: center;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-family: var(--primary-font);
+    padding-bottom: 10px;
     font-size: 18px;
 }
